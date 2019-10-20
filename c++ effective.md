@@ -67,9 +67,9 @@
 	+ 使操作const对象成为可能，这对编写高效代码而言是个关键。
 * 只是常量性不同的函数，也是可以重载的。
 #### bitwise const
-	const成员函数中没有改变任何值
++ const成员函数中没有改变任何值
 #### mutable 
-	释放掉non-static成员变量的bitwise constness约束
++ 释放掉non-static成员变量的bitwise constness约束
 #### const和non-const的转型
 + 先将(*this)用static_cast转成const，再调用const函数，再将结果const_cast转换成非常量。
 + 反过来不可行，是因为在const函数中，不可改变对象的逻辑状态。
